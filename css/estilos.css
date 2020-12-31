@@ -1,0 +1,977 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Trispace:wght@300;600&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---COMIENZO DEL INDEX---*/
+
+body {
+    background-color: rgb(207, 179, 140);
+    color: rgb(46, 39, 29);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 22vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    list-style: none;
+    background-color: rgb(163, 139, 105);
+    color: rgb(46, 39, 29);
+    margin: auto;
+    overflow: hidden;
+    padding-left: 10rem;
+}
+
+.logo {
+    width: 100%;
+    height: 16vh;
+    overflow: hidden;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 2rem;
+}
+
+.nav ul li a {
+    color: rgb(46, 39, 29);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    height: 40vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 2.5rem;
+    margin: auto;
+    height: 10vh;
+}
+p {
+    font-size: 1.2rem;
+    font-family: "Trispace", sans-serif;
+    text-align: center;
+    color: rgb(46, 39, 29);
+    margin: auto;
+    height: 5vh;
+    padding-left: 2rem;
+}
+
+/*---GRID---*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "recomendadoos resena"
+        "recomendadoos resena";
+}
+/*---RECOMENDADOS---*/
+.recomendadoos {
+    grid-area: unset;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    padding: 1rem;
+    margin: auto;
+}
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    padding: 2rem;
+    margin: auto;
+}
+.img {
+    padding: 1rem;
+    width: 30%;
+}
+
+/*---RESEÑAS---*/
+.resena {
+    grid-area: unset;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    padding: 1rem;
+    margin: auto;
+}
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    padding: 2.5rem;
+    margin: auto;
+}
+.img {
+    padding: 1rem;
+    width: 30%;
+}
+
+/*---CONTACTO---*/
+
+.contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: auto;
+    padding: 2.5rem;
+    height: 5vh;
+}
+
+.form-group {
+    text-align: center;
+    color: rgb(46, 39, 29);
+    font-family: "Trispace", sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    line-height: 1;
+    text-align: center;
+    margin: auto;
+    margin-left: 6rem;
+    padding-left: 2rem;
+}
+
+.btn-light {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Trispace", sans-serif;
+    height: 7vh;
+    line-height: 2;
+    background-color: rgb(173, 156, 132);
+    transition: 5s;
+    margin: auto;
+}
+
+.btn-light:hover {
+    transform: scale(0.8);
+}
+
+/*---FOOTER---*/
+
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 6rem;
+    font-size: 0.8rem;
+    background-color: rgb(163, 139, 105);
+    margin: auto;
+    overflow: hidden;
+}
+.redes {
+    display: flex;
+    font-size: 1rem;
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*---MOBILE---*/
+@media screen and (max-width: 900px) {
+    .navbar-toggler {
+        position: fixed;
+        left: 3rem;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin-left: 1rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        height: 3vh;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .blog {
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 2rem 0;
+        margin: auto;
+    }
+    p {
+        font-size: 1rem;
+        font-family: "Trispace", sans-serif;
+        text-align: center;
+        color: rgb(46, 39, 29);
+        height: 15vh;
+        padding: 1rem 0;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: unset;
+        text-align: center;
+    }
+
+    .recomendados {
+        grid-area: unset;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding-left: 1rem;
+        padding: 1rem 0;
+    }
+    img {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-left: 1rem;
+        padding: 1rem 0;
+    }
+
+    .resenas {
+        grid-area: unset;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h2 {
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding-left: 1rem;
+        padding: 1rem 0;
+    }
+    img {
+        display: flex;
+        padding-left: 2rem;
+        padding: 2rem 0;
+    }
+
+    .contacto {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .h2 {
+        font-size: 1.3rem;
+        font-family: "Montserrat", sans-serif;
+        margin: auto;
+        padding: 2rem;
+        height: 5vh;
+    }
+
+    .form-group {
+        text-align: center;
+        color: rgb(46, 39, 29);
+        font-family: "Trispace", sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1;
+        text-align: center;
+        margin: auto;
+        margin-left: 2rem;
+        padding-left: 1rem;
+    }
+
+    .btn-light {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        font-family: "Trispace", sans-serif;
+        height: 7vh;
+        line-height: 2;
+        background-color: rgb(173, 156, 132);
+        transition: 5s;
+        margin: auto;
+    }
+
+    .btn-light:hover {
+        transform: scale(0.8);
+    }
+}
+
+/*---TABLET---*/
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 22vh;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        list-style: none;
+        background-color: rgb(163, 139, 105);
+        color: rgb(46, 39, 29);
+        margin: auto;
+        overflow: hidden;
+        padding-left: 10rem;
+    }
+
+    .logo {
+        width: 10%;
+        height: 16vh;
+        overflow: hidden;
+    }
+
+    .nav ul {
+        display: flex;
+    }
+
+    .nav ul li {
+        margin-left: 2rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .blog {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: column nowrap;
+        padding: 1rem;
+        height: 40vh;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 2.5rem;
+        margin: auto;
+        height: 10vh;
+    }
+    p {
+        font-size: 1.2rem;
+        font-family: "Trispace", sans-serif;
+        text-align: center;
+        color: rgb(46, 39, 29);
+        margin: auto;
+        height: 5vh;
+        padding-left: 2rem;
+    }
+
+    /*---GRID---*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "recomendadoos resena"
+            "recomendadoos resena";
+    }
+    /*---RECOMENDADOS---*/
+    .recomendadoos {
+        grid-area: unset;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        padding: 1rem;
+        margin: auto;
+    }
+    .h2 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        margin: auto;
+        padding: 2rem;
+        margin: auto;
+    }
+    .img {
+        padding: 1rem;
+        width: 30%;
+    }
+
+    /*---RESEÑAS---*/
+    .resena {
+        grid-area: unset;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        padding: 1rem;
+        margin: auto;
+    }
+    .h2 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        margin: auto;
+        padding: 2.5rem;
+        margin: auto;
+    }
+    .img {
+        padding: 1rem;
+        width: 30%;
+    }
+
+    /*---CONTACTO---*/
+
+    .contacto {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+    .h2 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        margin: auto;
+        padding: 2.5rem;
+        height: 5vh;
+    }
+
+    .form-group {
+        text-align: center;
+        color: rgb(46, 39, 29);
+        font-family: "Trispace", sans-serif;
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1;
+        text-align: center;
+        margin: auto;
+        margin-left: 6rem;
+        padding-left: 2rem;
+    }
+
+    .btn-light {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        font-family: "Trispace", sans-serif;
+        height: 7vh;
+        line-height: 2;
+        background-color: rgb(173, 156, 132);
+        transition: 5s;
+        margin: auto;
+    }
+
+    .btn-light:hover {
+        transform: scale(0.8);
+    }
+}
+/*---FINAL DEL INDEX---*/
+
+/*---SECCIONES---*/
+
+/*---BLOG---*/
+
+.miblog {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 40vh;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+    margin: auto;
+}
+p {
+    font-size: 1.1rem;
+    font-family: "Trispace", sans-serif;
+    text-align: center;
+    color: rgb(46, 39, 29);
+    padding: 1.5rem 0;
+    margin: auto;
+}
+@media screen and (max-width: 900px) {
+    .navbar-toggler {
+        position: fixed;
+        left: 3%;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin-left: 1rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-left: 0.1rem;
+        padding-left: 0.1rem;
+        width: -50%;
+        height: 3vh;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .miblog {
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 1rem;
+        height: 70vh;
+    }
+
+    .h2 {
+        font-size: 1.8rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        
+        padding: 1rem;
+        height: 15vh;
+        margin: auto;
+    }
+    .parrafoo {
+        font-size: 1rem;
+        font-family: "Trispace", sans-serif;
+        text-align: center;
+        color: rgb(46, 39, 29);
+        padding: 1rem;
+        height: 60vh;
+        margin: auto;
+        
+    }
+}
+
+/*---RECOMENDADOS---*/
+
+.recomendados {
+    color: rgb(46, 39, 29);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 90vh;
+}
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.img-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    margin-left: 5rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+​ .text {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    font-family: "Trispace", sans-serif;
+    padding: 1rem;
+    margin: auto;
+}
+
+.parrafo {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    font-family: "Trispace", sans-serif;
+    padding: 1rem;
+    margin: auto;
+    height: 1vh;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-toggler {
+        position: fixed;
+        left: 3%;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin-left: 1rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-left: 0.1rem;
+        padding-left: 0.1rem;
+        width: -50%;
+        height: 3vh;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .recomendados {
+    color: rgb(46, 39, 29);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    height: 250vh;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.img-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+​ .text {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    font-family: "Trispace", sans-serif;
+    padding: 1rem;
+    margin: auto;
+}
+
+.parrafo {
+    text-align: left;
+    font-size: 1rem;
+    font-family: "Trispace", sans-serif;
+    margin: auto;
+    height: 250vh;
+}
+}
+
+/*---RESEÑAS---*/
+
+.resenas {
+    color: rgb(46, 39, 29);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 119vh;
+}
+.h2 {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.img-r {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+​ .text {
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+    font-family: "Trispace", sans-serif;
+    padding: 1rem;
+    margin: auto;
+}
+
+.parrafo {
+    text-align: left;
+    font-size: 1rem;
+    font-family: "Trispace", sans-serif;
+    margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-toggler {
+        position: fixed;
+        left: 5%;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin-left: 1rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-left: 0.1rem;
+        padding-left: 0.1rem;
+        width: -50%;
+        height: 3vh;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .resenas {
+        color: rgb(46, 39, 29);
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        padding: 1rem;
+        height: 290vh;
+    }
+
+    .h2 {
+        font-size: 1.5rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .img-r {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+
+    ​ .text {
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 1.3rem;
+        font-family: "Trispace", sans-serif;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .parrafo {
+        text-align: left;
+        font-size: 1rem;
+        font-family: "Trispace", sans-serif;
+        margin: auto;
+        height: 250vh;
+    }
+}
+
+/*---CONTACTO---*/
+.contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+h2 {
+    font-size: 1.8rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    height: 12vh;
+}
+P {
+    font-family: "Trispace", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    height: 12vh;
+}
+.contacredes ul {
+    display: flex;
+}
+
+.contacredes ul li {
+    margin-left: 5rem;
+}
+.contacredes ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-light {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Trispace", sans-serif;
+    height: 7vh;
+    line-height: 2;
+    background-color: rgb(173, 156, 132);
+    transition: 5s;
+    margin: auto;
+}
+
+.btn-light:hover {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 900px) {
+    .navbar-toggler {
+        position: fixed;
+        left: 5%;
+    }
+    .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav ul li {
+        margin-left: 1rem;
+    }
+
+    .nav ul li a {
+        color: rgb(46, 39, 29);
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        margin-left: 0.1rem;
+        padding-left: 0.1rem;
+        width: -50%;
+        height: 3vh;
+    }
+
+    .logo {
+        display: none;
+    }
+    .contacto {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h2 {
+        font-size: 1.8rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        margin: auto;
+        padding: 2rem;
+        height: 12vh;
+    }
+    P {
+        font-family: "Trispace", sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: auto;
+        padding: 15rem;
+        
+    }
+    .contacredes ul {
+        display: flex;
+    }
+    
+    .contacredes ul li {
+        margin-left: 5rem;
+    }
+    .contacredes ul li a {
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .formulario {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .btn-light {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        font-family: "Trispace", sans-serif;
+        height: 7vh;
+        line-height: 2;
+        background-color: rgb(173, 156, 132);
+        transition: 5s;
+        margin: auto;
+    }
+    
+    .btn-light:hover {
+        transform: scale(0.8);
+    }
+}       
+        
